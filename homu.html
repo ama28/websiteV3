@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Adrian Ma</title>
+    <link href='homu.css' rel='stylesheet'/>
+  </head>
+
+  <body>
+    <div class='header' style="background-color:rgba(0,0,0,0.7);">
+      <div class='logo'><img src='images/awesome-logo.svg'/></div>
+      <ul class='menu'>
+        <li class='dropdown'><span>Design</span>
+          <ul class='dropdown-menu'>
+            <li><a href='#'>t(rack)</a></li>
+            <li><a href='#'>PeerCoCo</a></li>
+          </ul>
+        </li>
+        <li class='dropdown'><span>Games</span>
+          <ul class='dropdown-menu'>
+            <li><a href='#'>Channel</a></li>
+            <li><a href='#'>CMU Boxhead</a></li>
+            <li><a href='#'>Map Runner</a></li>
+          </ul>
+        </li>
+        <li class='dropdown'><span>Research</span>
+          <ul class='dropdown-menu' style='padding-right: 30px;'>
+            <li><a href='#'>P3G</a></li>
+            <li><a href='#'>Beat Saber</a></li>
+          </ul>
+        </li>
+        <li class='dropdown'><span>Art</span>
+          <ul class='dropdown-menu'>
+            <li><a href='#'>Animation</a></li>
+            <li><a href='#'>Illustration</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class='content-container'>
+      <div class='content'>
+        <h2>Hi! I'm Adrian</h2>
+      </div>
+    </div>
+    <div class='midblock-container'>
+      <div class='midblock'>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+          ante tortor, venenatis ut nisl id, feugiat molestie sem.
+        </p>
+      </div>
+    </div>
+
+    <br><br><br>
+    <div class='slideshow-container'>
+      <div class="mySlides fade">
+        <img src="images/IMG_0399.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/back.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/IMG_0368.jpg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div class='dots'>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <br>
+
+    <div class='footer-container'>
+      <div class='footer'>
+        <p>Contact me on <a href='www.linkedin.com/in/adrian-ma8' target='_blank'>LinkedIn</a>
+        or email me at <a href='#'>amm28y@gmail.com</a></p>
+      </div>
+      <div class='back-to-top'>
+        <a class='back' href='#'>Back to Top</a>
+      </div>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+  </body>
+</html>
