@@ -166,7 +166,6 @@ a:visited {
 
 .footer-container {
   display: flex;
-  border: 2px solid red;
   justify-content: center;
 }
 
@@ -189,6 +188,13 @@ a:visited {
 
 .section-image{
   background: url('images/menu_bg.png') center fixed;
+  background-size: cover;
+  width: 100%;
+  padding-top: 29%;
+}
+
+.section-image-research {
+  background: url('images/back2.jpg') center fixed;
   background-size: cover;
   width: 100%;
   padding-top: 29%;
@@ -253,23 +259,27 @@ a:visited {
   cursor: default;
 }
 
-.track-logo-container {
-  display: flex;
-  justify-content: center;
-  border: 2px solid yellow;
-  width: 40%;
-}
-
 .pc-container {
   pointer-events: none;
-  border: 2px solid yellow;
+}
+
+.pc-images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.pclogo {
+  max-width: 20%;
+  margin: 20px;
 }
 
 /* Slideshow container */
 .slideshow-container {
   pointer-events: auto;
-  max-width: 40%;
-  border: 2px solid red;
+  max-width: 80%;
   height: auto;
   position: relative;
   flex-direction: row;
@@ -327,7 +337,12 @@ a:visited {
   background-color: #717171;
 }
 
+.dots-container {
+  pointer-events: none;
+}
+
 .dots {
+  pointer-events: auto;
   text-align: center;
 }
 
