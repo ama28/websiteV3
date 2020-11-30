@@ -310,7 +310,7 @@ a:visited {
 /* Slideshow container */
 .slideshow-container {
   pointer-events: auto;
-  max-width: 70%;
+  max-width: 65%;
   height: auto;
   position: relative;
   flex-direction: row;
