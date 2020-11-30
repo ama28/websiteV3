@@ -200,10 +200,41 @@ a:visited {
   padding-top: 29%;
 }
 
+.section-image-art {
+  background: url('images/art/opener.jpg') center fixed;
+  background-size: cover;
+  width: 100%;
+  padding-top: 29%;
+}
+
+#illustration {
+  /* Prevent vertical gaps */
+  line-height: 0;
+
+  -webkit-column-count: 3;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    3;
+  -moz-column-gap:      0px;
+  column-count:         3;
+  column-gap:           0px;
+}
+
+#illustration img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  padding: 10px;
+}
+
 .section-body {
   padding: 100px 150px;
   background: #FFF;
   /* margin-top: 30%; */
+}
+
+.section-body-art {
+  padding: 50px 75px;
+  background: #FFF;
 }
 
 .menu > li {
