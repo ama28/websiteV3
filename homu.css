@@ -424,7 +424,7 @@ a:visited {
 
 .back-to-top a:link,
 a:visited {
-  color: #FFF;
+  /* color: #FFF; */
   text-decoration: none;
 }
 
