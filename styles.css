@@ -1,4 +1,4 @@
-/* Generated on: Thu Sep 30 2021 22:06:05 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Thu Sep 30 2021 22:37:10 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -212,9 +212,9 @@
    }
    
    .text-block {
+     padding: 35px 35px 0px;
      font-size: 40px;
      font-weight: 300;
-     padding: 30px 30px 0px 30px;
      text-align: center;
      text-decoration: underline;
    }
