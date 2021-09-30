@@ -214,6 +214,7 @@
    .text-block {
      font-size: 40px;
      font-weight: 300;
+     padding: 35px;
      text-align: center;
      text-decoration: underline;
    }
