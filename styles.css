@@ -1,4 +1,4 @@
-/* Generated on: Sat Oct 16 2021 21:15:16 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Tue Oct 19 2021 12:44:05 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -187,6 +187,7 @@
      color: #fff;
      text-decoration: none;
      text-transform: none;
+     cursor: pointer;
    }
    
    .button.w--current {
