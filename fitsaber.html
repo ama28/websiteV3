@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <title>Adrian Ma</title>
+    <link href='projectpages.css' rel='stylesheet'/>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class='header'>
+        <a href='home.html#top'><img src='images/nav/am_logo.png' style='height:32px;'/></a>
+        <div class='menu'>
+            <a class='textbutton' href='home.html#UI/UX'>UI/UX</a> 
+            <a class='textbutton' href='home.html#GAMES'>GAMES</a>
+            <a href='mailto: amm28y@gmail.com'><img src='images/nav/mailicon.png' style='height:36px;padding-top:3px;'/></a>
+        </div>
+    </div>
+
+    <!-- Front Page -->
+    <div class='opener' id='top'>
+        <div class='descriptioncontainer'>
+            <div class='description'>
+                <img src='images/logos/fitsaberlogo.svg' style='height:18%;'/>
+                <h3 style='color:white;'>Understanding the effects of immersive experiences and exercise on cognition</h3>
+                <div class='tagcontainer'>
+                    <p class='tag first'>RESEARCH</p>
+                    <p class='tag'>XR</p>
+                    <p class='tag'>PROGRAMMING</p>
+                </div>
+                <p class='descriptors'><b>My Roles</b>&emsp;&emsp;VR developer, research assistant</p>
+                <p class='descriptors'><b>Project Length</b>&emsp;&emsp;Sep 2020 - Present</p>
+                <p class='descriptors'><b>End Users</b>&emsp;&emsp;18-22 year olds</p>
+                <p class='descriptors'><b>Mentors</b>&emsp;&emsp;Cassondra Eng, Dr. Anna Fisher,</p>
+                <p class='descriptors'>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;Dr. Erik Thiessen</p>
+            </div>
+            <img class='scrollbutton' src='images/nav/scrollicon.svg'/>
+        </div>
+        <img class='example' src='images/fitsaberassets/demo.gif' style='height:38%;right:3%;top:32%;border-radius: 8px;'/>
+    </div>
+
+    <!-- Project Debrief -->
+    <div class='content'>
+        <div class='contentblock first'>
+            <h1>summary</h1>
+            <p>With the rapid growth of the field of immersive technology and the surge in people’s online presences with the onset of the 
+                pandemic, it is becoming increasingly important for us to understand how people think and function within virtual spaces. <br><br>
+
+                This research study aims to address this issue through the creation of FitSaber, a game inspired by the popular VR game 
+                Beat Saber but altered to fit the needs of this experiment, and has funding from Facebook Reality Labs and multiple CMU 
+                research grants, including the SURF grant I received personally for the development of the game’s tutorial in the summer of 2021. <br><br>
+                
+                Data collection for the study will begin in spring 2022. </p>
+        </div>
+
+        <div class='contentblock last'>
+            <h1>overview</h1>
+            <p>Our study focuses on <b>two main research questions: </b></p>
+            <img src='images/fitsaberassets/fitsabergoals.svg' style='width:100%;'/>
+            <h2 style='text-align:center;margin: 60px 0px 40px 0px;'>FitSaber</h2>
+            <p>
+                Using Unity, our team developed FitSaber from scratch, a VR rhythm game where players have to slice incoming blocks in a 
+                corresponding direction with a corresponding saber in accordance with the rhythm of a song. <br><br>
+
+                In pursuit of our research questions, we implemented a <b>Stroop</b> effect into the game which, when turned on, requires 
+                participants to slice blocks in the opposite direction of what the arrow on the block indicates. As the Stroop effect has 
+                been extensively tested and confirmed in non-immersive contexts, our experiments strives to understand to what extent 
+                the effect carries over in virtual reality.
+            </p>
+            <img src='images/fitsaberassets/stroop.svg' class='center' style='width:90%;'/>
+            <p style='margin-top: 40px;'>
+                We also implemented an <b>exercise condition,</b> which toggles between sedentary and aerobic versions of songs, utilizing elements 
+                such as red zones that the player must dodge as well as the placement of incoming blocks to do so. <br><br>
+
+                With these two treatment variables in place, stroop and exercise, FitSaber incorporates <b>four experimental conditions</b> shown below. 
+            </p>
+            <img src='images/fitsaberassets/fitsaberconditions.svg' class='center' style='width:90%;margin-bottom: 50px;'/>
+            <p style='margin:0 0 10px 0;'><b >Other features:</b></p>
+            <ul style="list-style-type:circle;margin-left: 30px;margin-top:0;">
+                <li>Integration with Beat Saber beatmaps</li>
+                <li>Experimenter GUI for researchers to easily choose specific songs or conditions</li>
+                <li>Tutorial for participants to learn and practice the game before testing</li>
+                <li>Audio and visual feedback when playing</li>
+                <li>Automatic scoring and data collection system with variables such as accuracy, score, and comparisons across conditions</li>
+            </ul>
+
+            <h2 style='text-align:center;margin: 60px 0px 40px 0px;'>Experimental Design</h2>
+            <div class='horizontalblock full' style='margin-bottom: 30px;'>
+                <p style='margin:0;'>In order to collect background data and ensure that our sample has high internal and external validity, we also 
+                    created pre-test and post-test <b>cognitive batteries</b> in Unity, which include demographic and behavioral surveys as well as 
+                    attention tasks and conventional stroop tasks. <b>Data from the batteries is automatically saved</b> and exported to an Excel 
+                    spreadsheet.</p>
+                <img src='images/fitsaberassets/paces.gif' style='width:350px;margin-left: 30px;'>
+            </div>
+            <p>
+                The experiment uses a <b>within-subjects design,</b> where each participant experiences all four treatment conditions, and <b>accounts for 
+                carry-over effects through counter-balancing</b> (participants go through the conditions in a random order after getting used to the game 
+                through the tutorial).<br><br>
+
+                Participants will go through the study over five days and have their cognitive data collected through brain imaging techniques along 
+                the way. Data collection will begin in the spring of 2022. Below is our progress presentation from the CMU Meeting of the Minds research 
+                symposium in the spring of 2021. 
+            </p>
+            <iframe width="560" height="315" style='display:block;margin:50px auto;' src="https://www.youtube.com/embed/hTGAXOeDxpU" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <a href='#top' class='backtotop'><img src='images/buttons/backtotopbutton.svg' style='height:100%;'/></a>
+    </div>
+</body>
+</html>

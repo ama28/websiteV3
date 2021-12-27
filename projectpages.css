@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat/Montserrat-ExtraLight.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat/Montserrat-Light.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat/Montserrat-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat/Montserrat-Regular.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat/Montserrat-Medium.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Aldrich';
+    src: url(Aldrich/Aldrich-Regular.ttf);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 200;
+    color: black;
+    background: url('images/background.jpg') center fixed;
+    background-size: cover;
+    overflow-wrap: normal;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+/* Nav Bar */
+
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.textbutton {
+    opacity: 0.8;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    right: 0;
+    top: 50px;
+    padding: 0px 60px;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    max-height: 100%;
+    width: 60%;
+}
+
+.menu a{
+    margin-left: 15%;
+}
+
+/* Front Page */
+.opener {
+    padding: 0;
+    margin: 0;
+}
+
+.descriptioncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 3.5%;
+    background-color: #1B223C;
+    height: 100vh;
+    width: 54vw;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    height: 70%;
+    width: 80%;
+}
+
+.descriptors {
+    margin: 5px 0px;
+    color: white;
+}
+
+h3 {
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.nologo {
+    font-family: 'Aldrich';
+    color:white;
+    text-align: left;
+    font-size: 48px;
+    margin:0;
+    padding: 0;
+}
+
+.tagcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin: 0;
+    padding: 0;
+}
+
+.tag {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FF8585;
+
+    border: 1px solid #FF8585;
+    border-radius: 8px;
+    margin: 30px 20px;
+    padding: 10px 30px;
+}
+
+.tag.first {
+    margin: 30px 10px 30px 0px;
+}
+
+.scrollbutton {
+    position: absolute;
+    height: 70px;
+    bottom: 40px;
+    left: 5.3%;
+}
+
+.example {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    z-index: -1;
+
+    height: 80%;
+}
+
+/* Main Content */
+
+h1 {
+    color: #D66B6B;
+    font-weight: 600;
+    text-align: center;
+    margin: 30px 0px 40px 0px;
+}
+
+h2 {
+    color: #903BB6;
+    font-weight: 600;
+    margin: 40px 0px 20px;
+}
+
+.redh2 {
+    color:#FF5757;
+    text-align: center;
+    margin: 60px 0px 20px 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    background-image: url('images/endless-clouds.svg');
+    background-size: 150px;
+    background-position: center;
+}
+
+.contentblock {
+    width: 65%;
+    margin-top: 60px;
+    padding: 30px 100px 50px 100px;
+    
+
+    background-color: white;
+    border: 3px solid #F5F5F5;
+}
+
+.contentblock.first {
+    margin-top: 100px;
+}
+
+.contentblock.last {
+    margin-bottom: 50px;
+}
+
+.horizontalblock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 50px;
+}
+
+.horizontalblock.full {
+    padding: 0px 0px;
+}
+
+.horizontalitem {
+    width: 30%;
+}
+
+video {
+    margin: 30px 50px 30px 0px;
+    float: center;
+    vertical-align: center;
+    border-radius: 4px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.backtotop {
+    height: 50px;
+    margin-bottom: 100px;
+}
+
