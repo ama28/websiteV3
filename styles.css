@@ -153,6 +153,7 @@ a:hover {
 .project {
     width: 85%;
     height: 75%;
+    position: relative;
 }
 
 .projectheader {
@@ -212,7 +213,10 @@ a:hover {
 }
 
 .projectbuttons {
-    height: 15%;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .buttonimg {
