@@ -187,7 +187,7 @@ h3 {
 
 .example {
     position: absolute;
-    top: 0;
+    top: 15%;
     right: 0;
     z-index: -1;
 
