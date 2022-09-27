@@ -194,6 +194,15 @@ h3 {
     height: 80%;
 }
 
+.c1 {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    z-index: -1;
+
+    width: 40%;
+}
+
 
 /* Main Content */
 
@@ -308,6 +317,22 @@ video {
 
 .vidbuttons {
     max-height: 40px;
+}
+
+.horizontalbuttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-image-block {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    margin: 0px;
+}
+
+ol > li::marker {
+    font-weight: bold;
 }
 
 
